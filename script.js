@@ -9,10 +9,7 @@ var count=0, pauseCounter = false;
 
 
 function updateCountdown(){
-    
-    console.log(hoursInput.value + " PA MINUTE " + minutesInput.value + " PA SEKUNDE " + secondsInput.value);
     var hours = Math.floor(time/3600);
-    console.log(hours);
     var minutes = Math.floor(time % 3600 / 60);
     var seconds = time % 3600 % 60;
     seconds = seconds < 10 ? '0' + seconds : seconds;
