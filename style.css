@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+
+
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.95rem;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.634);
+    background-color: lightgrey;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-part1, .form-part2, .buttonControl-part{
+    display: flex;
+    flex-direction: row;
+}
+
+#clock-segment{
+    margin-top: 4.5rem;
+    font-size: 2rem;
+    margin-left: 2rem;
+    position:absolute;
+    z-index: 1;
+}
+
+p, input{
+    margin-left: 3rem;
+}
+
+input{
+    border-radius: 0.5rem;
+    border: gray 2px solid;
+    margin-top: -3rem;
+    text-align: right;
+    font-size:  1.25rem;
+    margin-bottom: 5rem;
+    height: 1.5rem;
+}
+
+#hour-input{
+    width: 9.5rem;
+}
+
+#minute-input{
+    width: 13rem;
+}
+
+#second-input{
+    width: 13rem;
+}
+
+button{
+    color: white;
+    cursor: pointer;
+    border: black 5px solid;
+    
+}
+
+.start-button{
+    background-color: rgb(24, 158, 24);
+}
+
+.stop-button{
+    background-color: rgb(158, 24, 24);
+}
+
+.pause-button{
+    background-color: rgb(158, 136, 24);
+}
+
+
+.timer-part{
+    font-family: 'Orbitron', sans-serif;
+}
+
+img{
+    width: 15rem;
+}
+
+.form-part3{
+    display: none;
+}
+
+@media(max-width: 900px){
+     .form-part1, .form-part2{
+        display: none;
+     }
+
+     .form-part3{
+        display: flex;
+        flex-direction: column;
+     }
+
+    input, p{
+        margin-left: 0rem;
+    }
+
+    input{
+        margin-bottom: 0rem;
+    }
+
+    input:last-child{
+        margin-bottom: 4rem;
+    }
+
+
+    body{
+        text-align: center;
+    }
+     #hour-input{
+        width: 13rem;
+    }
+    
+    #minute-input{
+        width: 13rem;
+    }
+    
+    #second-input{
+        width: 13rem;
+    }
+
+
+}
